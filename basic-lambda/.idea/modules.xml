@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-lambda.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-lambda_main.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-lambda_main.iml" group="basic-lambda" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-lambda_test.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-lambda_test.iml" group="basic-lambda" />
+    </modules>
+  </component>
+</project>
