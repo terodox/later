@@ -1,5 +1,6 @@
 package BasicLambda;
 
+import Dynamo.DynamoItemsRepository;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
@@ -10,6 +11,11 @@ public class Main implements RequestHandler<InputObject, String> {
         logRemainingTime(context);
         log(context, "Input: " + input.getId());
 
+        ItemsRepository repo = DynamoItemsRepository.Create();
+        NewItem resultingItem = repo.AddItem(new NewItem(input.getId(), null, 0));
+
+        log(context, resultingItem.getId().toString());
+        log(context, "" + resultingItem.getTimeInTicks());
         return "Hello, " + input.getId() + "!";
     }
 
