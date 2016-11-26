@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BasicLambdaTests.MainTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-26T00:44:57" hostname="xps" time="1.59">
+<testsuite name="BasicLambdaTests.MainTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-26T01:12:52" hostname="xps" time="1.618">
   <properties/>
-  <testcase name="TestLoggingAtStart" classname="BasicLambdaTests.MainTests" time="1.59"/>
+  <testcase name="TestLoggingAtStart" classname="BasicLambdaTests.MainTests" time="1.618"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
