@@ -1,13 +1,12 @@
 package BasicLambdaTests;
 
-import BasicLambda.InputObject;
+import BasicLambda.LaterDetails;
 import BasicLambda.Main;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.LambdaLogger;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.mockito.ArgumentCaptor;
-import org.mockito.Matchers;
 import org.mockito.Mockito;
 
 import java.util.List;
@@ -25,8 +24,8 @@ public class MainTests {
         Context mockContext = Mockito.mock(Context.class);
         when(mockContext.getLogger()).thenReturn(lambdaLogger);
 
-        InputObject input = new InputObject();
-        input.setId("The Best Id On The Planet.");
+        LaterDetails input = new LaterDetails();
+        input.setMessage("The Best Id On The Planet.");
         Main sut = new Main();
 
         sut.handleRequest(input, mockContext);
