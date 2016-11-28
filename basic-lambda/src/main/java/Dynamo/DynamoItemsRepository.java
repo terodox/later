@@ -26,8 +26,8 @@ public class DynamoItemsRepository implements ItemsRepository {
     }
 
     @Override
-    public NewItem addItem(NewItem newItem) {
-        LaterItem laterItem = LaterItem.FromNewItem(newItem);
+    public NewItem addItem(String object) {
+        LaterItem laterItem = LaterItem.FromObjectString(object);
         dynamoClient.save(laterItem);
         return laterItem.ToNewItem();
     }

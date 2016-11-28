@@ -22,11 +22,13 @@ public class MessageProcessor {
     }
 
     public NewItem processItem(LaterDetails input) throws JsonProcessingException {
+        if(input == null) throw new RuntimeException("input cannot be null");
+
         try {
             logger.log(input.toString());
             String object = mapper.writeValueAsString(input);
 
-            NewItem resultingItem = repository.addItem(new NewItem(object, null, 0));
+            NewItem resultingItem = repository.addItem(object);
 
             logger.log(resultingItem.getId().toString());
             logger.log("" + resultingItem.getTimeInTicks());

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BasicLambdaTests.NewItemTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-11-28T17:34:03" hostname="xps" time="0.032">
+  <properties/>
+  <testcase name="Constructor_WithNullId_ThrowsException" classname="BasicLambdaTests.NewItemTests" time="0.0"/>
+  <testcase name="Constructor_WithEmptyObject_ThrowsException" classname="BasicLambdaTests.NewItemTests" time="0.016"/>
+  <testcase name="Create_WithValidObject_PopulatesIdAndTimeInTicks" classname="BasicLambdaTests.NewItemTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

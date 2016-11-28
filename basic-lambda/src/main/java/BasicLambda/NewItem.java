@@ -10,8 +10,13 @@ public class NewItem {
     private long timeInTicks;
     private String object;
 
+    public static NewItem Create(String object) {
+        return new NewItem(object, UUID.randomUUID(), System.currentTimeMillis());
+    }
+
     public NewItem(String object, UUID id, long timeInTicks) {
         if(object.isEmpty()) throw new IllegalArgumentException("object cannot be empty");
+        if(id == null) throw new IllegalArgumentException("id cannot be null");
 
         this.object = object;
         this.id = id;

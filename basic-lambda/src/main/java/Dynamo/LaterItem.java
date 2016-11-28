@@ -27,8 +27,8 @@ public class LaterItem {
         this.object = object;
     }
 
-    public static LaterItem FromNewItem(NewItem newItem) {
-        return new LaterItem(UUID.randomUUID(), System.currentTimeMillis(), newItem.getObject());
+    public static LaterItem FromObjectString(String object) {
+        return new LaterItem(UUID.randomUUID(), System.currentTimeMillis(), object);
     }
 
     public NewItem ToNewItem() {
