@@ -1,0 +1,26 @@
+{
+  "name": "later",
+  "version": "1.0.0",
+  "description": "An application designed to save digital things for later",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terodox/later.git"
+  },
+  "author": "Andy Desmarais <terodox@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terodox/later/issues"
+  },
+  "homepage": "https://github.com/terodox/later#readme",
+  "dependencies": {
+    "aws-sdk": "^2.45.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
